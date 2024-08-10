@@ -171,13 +171,17 @@ const DailyList = () => {
                 {item[0]}
               </p>
               {item[2]}
-              <img
-                src={ArrowDown}
+              <div
                 onClick={() => showData(item)}
-                alt="arrow-down"
-                width={8}
-                className="cursor-pointer"
-              />
+                className="w-5 h-5 flex items-center justify-center"
+              >
+                <img
+                  src={ArrowDown}
+                  alt="arrow-down"
+                  width={8}
+                  className="cursor-pointer"
+                />
+              </div>
             </li>
           </div>
         );
