@@ -17,7 +17,9 @@
 
 ## Features
 
-1. Labels: I used labels to make it easy for the user
+1. Labels: I used labels to make it easy for the user.
+2. pop-up: I used a pop-up instead of the conventional accordin to maximise screen size for small screen sizes, & becuase you need space for the arabic version and transliteration.
+3. Dark-mode: For people who prefer dark mode.
 
 # Learn
 
