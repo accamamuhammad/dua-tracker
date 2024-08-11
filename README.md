@@ -20,8 +20,9 @@
 1. Labels: I used labels to make it easy for the user.
 2. pop-up: I used a pop-up instead of the conventional accordin to maximise screen size for small screen sizes, & becuase you need space for the arabic version and transliteration.
 3. Dark-mode: For people who prefer dark mode.
+4. settings for the user to edit and choose their prefrences
 
-! new things i learned
+## new things i learned
 
 ### how to pass data from child to parent (hack)
 
