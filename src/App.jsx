@@ -2,12 +2,19 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import DailyList from "./components/DailyList";
 import SpecialList from "./components/SpecialList";
+import HadithGen from "./components/HadithGen";
+import QuranGen from "./components/QuranGen";
 import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
   const [currentList, setCurrentList] = useState(0);
-  const Pages = [<DailyList key={0} />, <SpecialList key={1} />];
+  const Pages = [
+    <DailyList key={0} />,
+    <SpecialList key={1} />,
+    <HadithGen key={2} />,
+    <QuranGen key={3} />,
+  ];
 
   return (
     <>

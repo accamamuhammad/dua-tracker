@@ -44,7 +44,7 @@ const NavBar = (props) => {
           </p>
         </div>
         <div
-          onClick={() => props.handleCurrentPage(1)}
+          onClick={() => props.handleCurrentPage(2)}
           className={`${
             changeBorder === "Hadith"
               ? "border-b-2 border-b-newPurple"
@@ -60,7 +60,7 @@ const NavBar = (props) => {
           </p>
         </div>
         <div
-          onClick={() => props.handleCurrentPage(1)}
+          onClick={() => props.handleCurrentPage(3)}
           className={`${
             changeBorder === "Quran"
               ? "border-b-2 border-b-newPurple"
