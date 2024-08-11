@@ -2,6 +2,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import DailyList from "./components/DailyList";
 import SpecialList from "./components/SpecialList";
+import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
@@ -10,12 +11,13 @@ function App() {
 
   return (
     <>
-      <main className="w-screen h-screen flex items-center justify-center bg-white300">
+      <main className="w-screen h-[100dvh] flex items-center justify-center bg-white300">
         <section className="w-screen sm:w-[385px] mx-2 sm:mx-0 h-[520px] py-1 bg-white rounded-xl shadow-lg">
           <NavBar handleCurrentPage={(page) => setCurrentList(page)} />
           <div className="h-[410px] overflow-y-scroll">
             {Pages[currentList]}
           </div>
+          <Footer />
         </section>
       </main>
     </>

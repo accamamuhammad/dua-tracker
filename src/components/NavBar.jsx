@@ -1,61 +1,80 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGear } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = (props) => {
-  const [changeBorder, setChangeBorer] = useState(false);
-  const [toggleSettings, setToggleSettings] = useState(false);
+  const [changeBorder, setChangeBorer] = useState("daily");
 
-  const handleChangePage = () => {
-    setChangeBorer(!changeBorder);
-  };
-
-  const openSettings = () => {
-    setToggleSettings(!toggleSettings);
+  const handleChangeBorder = (e) => {
+    const id = e.target.id;
+    setChangeBorer(id);
   };
 
   return (
     <nav className="w-full h-14 relative px-3 border-b-[0.5px] gap-3.5 border-white200 flex flex-row justify-between">
       <div className="flex flex-row gap-3">
-        <div onClick={handleChangePage}>
-          <div
-            onClick={() => props.handleCurrentPage(0)}
-            className={`${
-              changeBorder ? "border-b-0" : "border-b-2 border-b-newPurple"
-            } ${"w-24 h-full cursor-pointer flex flex-row items-center justify-center gap-2.5"}`}
+        <div
+          onClick={() => props.handleCurrentPage(0)}
+          className={`${
+            changeBorder === "daily"
+              ? "border-b-2 border-b-newPurple"
+              : "border-b-0"
+          } ${"w-20 h-full cursor-pointer flex flex-row items-center justify-center gap-2.5"}`}
+        >
+          <p
+            id="daily"
+            onClick={(e) => handleChangeBorder(e)}
+            className="font-sgMedium text-sm w-full h-full flex items-center justify-center"
           >
-            <p className="font-sgMedium text-sm">Daily</p>
-            <span className="w-6 h-6 text-sm font-bold text-white200 flex items-center justify-center rounded-full bg-white300">
-              0
-            </span>
-          </div>
+            Daily
+          </p>
         </div>
-        <div onClick={handleChangePage}>
-          <div
-            onClick={() => props.handleCurrentPage(1)}
-            className={`${
-              changeBorder ? "border-b-2 border-b-newPurple" : "border-b-0 "
-            } ${"w-24 h-full cursor-pointer flex flex-row items-center justify-center gap-2.5"}`}
+        <div
+          onClick={() => props.handleCurrentPage(1)}
+          className={`${
+            changeBorder === "special"
+              ? "border-b-2 border-b-newPurple"
+              : "border-b-0"
+          } ${"w-20 h-full cursor-pointer flex flex-row items-center justify-center gap-2.5"}`}
+        >
+          <p
+            id="special"
+            onClick={(e) => handleChangeBorder(e)}
+            className="font-sgMedium text-sm w-full h-full flex items-center justify-center"
           >
-            <p className="font-sgMedium text-sm">Special</p>
-            <span className="w-6 h-6 text-sm font-bold text-white200 flex items-center justify-center rounded-full bg-white300">
-              3
-            </span>
-          </div>
+            Special
+          </p>
         </div>
-      </div>
-      <div
-        onClick={() => openSettings()}
-        className="w-24 h-full cursor-pointer flex items-center justify-end pr-3"
-      >
-        <FontAwesomeIcon icon={faGear} />
-      </div>
-      <div
-        className={`${
-          toggleSettings ? "flex" : "hidden"
-        } ${"absolute top-[50px] right-[20px] bg-white300 shadow-lg w-44 h-40 rounded-xl flex items-center justify-center"}`}
-      >
-        <p>settings</p>
+        <div
+          onClick={() => props.handleCurrentPage(1)}
+          className={`${
+            changeBorder === "Hadith"
+              ? "border-b-2 border-b-newPurple"
+              : "border-b-0"
+          } ${"w-20 h-full cursor-pointer flex flex-row items-center justify-center gap-2.5"}`}
+        >
+          <p
+            id="Hadith"
+            onClick={(e) => handleChangeBorder(e)}
+            className="font-sgMedium text-sm w-full h-full flex items-center justify-center"
+          >
+            Hadith
+          </p>
+        </div>
+        <div
+          onClick={() => props.handleCurrentPage(1)}
+          className={`${
+            changeBorder === "Quran"
+              ? "border-b-2 border-b-newPurple"
+              : "border-b-0"
+          } ${"w-20 h-full cursor-pointer flex flex-row items-center justify-center gap-2.5"}`}
+        >
+          <p
+            id="Quran"
+            onClick={(e) => handleChangeBorder(e)}
+            className="font-sgMedium text-sm w-full h-full flex items-center justify-center"
+          >
+            Quran
+          </p>
+        </div>
       </div>
     </nav>
   );
