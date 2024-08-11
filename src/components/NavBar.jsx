@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 const NavBar = (props) => {
   const [changeBorder, setChangeBorer] = useState("daily");
@@ -81,3 +82,7 @@ const NavBar = (props) => {
 };
 
 export default NavBar;
+
+NavBar.propTypes = {
+  handleCurrentPage: PropTypes.func.isRequired,
+};
