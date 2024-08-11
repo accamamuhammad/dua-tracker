@@ -21,9 +21,9 @@
 2. pop-up: I used a pop-up instead of the conventional accordin to maximise screen size for small screen sizes, & becuase you need space for the arabic version and transliteration.
 3. Dark-mode: For people who prefer dark mode.
 
-# Learn
+! new things i learned
 
-## how to pass data from child to parent (hack)
+### how to pass data from child to parent (hack)
 
 1. Create two components child and parent
 2. Add props to the () of the child component
