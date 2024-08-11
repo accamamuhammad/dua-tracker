@@ -1,9 +1,9 @@
 "use client";
 import MorningLabel from "./common/MorningLabel";
-import AfterPrayer from "./common/AfterPrayer";
+import AfterPrayerLabel from "./common/AfterPrayerLabel";
 import EveningLabel from "./common/EveningLabel";
 import DailyLabel from "./common/DailyLabel";
-import Sleep from "./common/Sleep";
+import SleepLabel from "./common/SleepLabel";
 import ArrowDown from "../assets/arrow-down.png";
 import { useState } from "react";
 
@@ -78,85 +78,85 @@ const DailyList = () => {
     [
       "After Salah #1",
       "Seek forgiveness for mistakes during prayer",
-      <AfterPrayer key={10} />,
+      <AfterPrayerLabel key={10} />,
       "Astaghfiru-llāh (x3), Allāhumma Anta-s-Salām, wa minka-s-salām, tabārakta yā Dha-l-Jalāli wa-l-Ikrām.",
     ],
     [
       "After Salah #2",
       "Warrād (the clerk of Mughīrah b. Shuʿba)",
-      <AfterPrayer key={11} />,
+      <AfterPrayerLabel key={11} />,
       "Lā ilāha illā-llāhu waḥdahū lā sharīka lah, lahu-l-mulku, wa lahu-l-ḥamd, wa Huwa ʿalā kulli shay’in Qadīr, Allāhumma lā māniʿa li-mā aʿaṭayt, wa lā muʿṭiya li-mā manʿat, wa lā yanfaʿu dha-l-jaddi minka-l-jadd.",
     ],
     [
       "After Salah #3",
       "Testement to Allah",
-      <AfterPrayer key={12} />,
+      <AfterPrayerLabel key={12} />,
       "Lā ilāha illā-llāhu waḥdahū lā sharīka lah, lahu-l-mulku, wa lahu-l-ḥamd, wa Huwa ʿalā kulli shay’in Qadīr, lā ḥawla wa lā quwwata illā bi-llāh, lā ilāha illā-llāh, wa lā naʿbudu illā iyyāh, lahu-n-nʿimatu wa lahu-l-faḍl, wa lahu-th-thanā’u-l-ḥasan, lā ilāha illā-llāhu mukhliṣīna lahu-d-dīn, wa law kariha-l-kāfirūn.",
     ],
     [
       "After Salah #4",
       "Rememberance of Allah",
-      <AfterPrayer key={13} />,
+      <AfterPrayerLabel key={13} />,
       "Allāhumma aʿinnī ʿalā dhikrika wa shukrika wa ḥusni ʿibādatik.",
     ],
     [
       "After Salah #5",
       "Seek protection from Allah",
-      <AfterPrayer key={14} />,
+      <AfterPrayerLabel key={14} />,
       "Allāhumma innī aʿūdhu bika mina-l-bukhl, wa aʿūdhu bika mina-l-jubn, wa aʿūdhu bika min an uradda ilā ardhali-l-ʿumur, wa aʿūdhu bika min fitnati-d-dunyā, wa aʿūdhu bika min ʿadhābi-l-qabr.",
     ],
     [
       "After Salah #6",
       "Praise Allah",
-      <AfterPrayer key={15} />,
+      <AfterPrayerLabel key={15} />,
       "Subḥāna-llāh (x33), Alḥamduli-llāh (x33), Allāhu akbar (x33)",
     ],
     [
       "After Salah #7",
       "Praise Allah",
-      <AfterPrayer key={16} />,
+      <AfterPrayerLabel key={16} />,
       "Lā ilāha illā Allāhu waḥdahū lā sharīka lah, lahu-l-mulku wa lahu-l-ḥamd, wa Huwa ʿalā kulli shay’in Qadīr.",
     ],
     [
       "Ayatul kursiyu",
       "Ayat al-Kursi: The Greatest Protection",
-      <AfterPrayer key={17} />,
+      <AfterPrayerLabel key={17} />,
       "Aʿūdhu bi-llāhi mina-sh-Shayṭāni-r-rajīm. Allāhu lā ilāha illā Huwa-l-Ḥayyu-l-Qayyūm, lā ta’khudhuhū sinatuw-wa lā nawm, lahū mā fi-s-samāwāti wa mā fi-l-arḍ, man dhā’lladhī yashfaʿu ʿindahū illā bi-idhnih, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shay’im-min ʿilmihī illā bi-mā shā’, wasiʿa kursiyyuhu-s-samāwāti wa-l-arḍ, wa lā ya’ūduhū ḥifẓuhumā wa Huwa-l-ʿAlliyu-l-ʿAẓīm.",
     ],
     [
       "Al-mu'awwidhatayn",
       "Suratul Nas, Falaq & Iklas",
-      <AfterPrayer key={18} />,
+      <AfterPrayerLabel key={18} />,
       "Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul Huwa-llāhu Aḥad. Allāhu-ṣ-Ṣamad. Lam yalid wa lam yūlad. Wa lam yakul-lahū kufuwan aḥad. Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul aʿūdhu bi Rabbi-l-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharri-n-naffāthāti fi-l-ʿuqad. Wa min sharri ḥāsidin idhā ḥasad. Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul aʿūdhu bi rabbi-n-nās. Maliki-n-nās. Ilāh-hin-nās. Min sharri-l-waswāsi-l-khannās. Al-ladhī yuwaswisu fī ṣudūri-n-nās. Mina-l-jinnati wa-n-nās.",
     ],
     [
       "After Fajr & Maghrib",
       "Testify your fate to Allah",
-      <AfterPrayer key={19} />,
+      <AfterPrayerLabel key={19} />,
       "Lā ilāha illā-llāhu waḥdahū lā sharīka lah, lahu-l-mulku wa lahu-l-ḥamdu yuḥyī wa yumīt, wa Huwa ʿalā kulli shay’in Qadīr, Allāhumma ajirnī mina-n-nār.",
     ],
     [
       "Ayatul kursiyu",
       "Ayat al-Kursi: The Greatest Protection",
-      <Sleep key={20} />,
+      <SleepLabel key={20} />,
       "Aʿūdhu bi-llāhi mina-sh-Shayṭāni-r-rajīm. Allāhu lā ilāha illā Huwa-l-Ḥayyu-l-Qayyūm, lā ta’khudhuhū sinatuw-wa lā nawm, lahū mā fi-s-samāwāti wa mā fi-l-arḍ, man dhā’lladhī yashfaʿu ʿindahū illā bi-idhnih, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shay’im-min ʿilmihī illā bi-mā shā’, wasiʿa kursiyyuhu-s-samāwāti wa-l-arḍ, wa lā ya’ūduhū ḥifẓuhumā wa Huwa-l-ʿAlliyu-l-ʿAẓīm.",
     ],
     [
       "protection before sleep",
       "protection before sleep",
-      <Sleep key={20} />,
+      <SleepLabel key={20} />,
       "Bismika Rabbi wada'tu janbi, wa bika arfa'uhu, in amsakta nafsi farhamha, wa in arsaltaha fahfazha bima tahfazu bihi 'ibadakas-salihin.",
     ],
     [
       "Last two Ayah of Surah-al Baqrah",
       "Last two Ayah of Surah-al Baqrah: Will suffice you",
-      <Sleep key={21} />,
+      <SleepLabel key={21} />,
       "Āmana-r-rasūlu bimā unzila ilayhi mi-r-rabbihī wa-l-mu’minūn, kullun āmana bi-l-llāhi wa malā’ikatihī wa kutubihī wa rusulih, lā nufarriqu bayna aḥadim-mi-r-rusulih, wa qālū samiʿnā wa aṭaʿnā ghufrānaka Rabbanā wa ilayka-l-maṣīr. Lā yukallifu-l-llāhu nafsan illā wusʿahā, lahā mā kasabat wa ʿalayhā ma-ktasbat, Rabbanā lā tuākhidhnā i-n-nasīnā aw akhṭa’nā, Rabbanā walā taḥmil ʿalaynā iṣran kamā ḥamaltahū ʿala-l-ladhīna min qablinā, Rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih, waʿfu ʿannā wa-ghfir lanā war-ḥamnā, Anta Mawlānā fan-ṣurnā ʿala-l-qawmi-l-kāfirīn.",
     ],
     [
       "Surah-al Kafirun",
       "Surah-al Kafirun: Negation of Shirk",
-      <Sleep key={22} />,
+      <SleepLabel key={22} />,
       "Āmana-r-rasūlu bimā unzila ilayhi mi-r-rabbihī wa-l-mu’minūn, kullun āmana bi-l-llāhi wa malā’ikatihī wa kutubihī wa rusulih, lā nufarriqu bayna aḥadim-mi-r-rusulih, wa qālū samiʿnā wa aṭaʿnā ghufrānaka Rabbanā wa ilayka-l-maṣīr. Lā yukallifu-l-llāhu nafsan illā wusʿahā, lahā mā kasabat wa ʿalayhā ma-ktasbat, Rabbanā lā tuākhidhnā i-n-nasīnā aw akhṭa’nā, Rabbanā walā taḥmil ʿalaynā iṣran kamā ḥamaltahū ʿala-l-ladhīna min qablinā, Rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih, waʿfu ʿannā wa-ghfir lanā war-ḥamnā, Anta Mawlānā fan-ṣurnā ʿala-l-qawmi-l-kāfirīn.",
     ],
   ];
