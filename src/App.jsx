@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <main className="w-screen h-[100dvh] flex items-center justify-center bg-white300">
+      <main className="w-screen h-[100dvh] flex items-center justify-center dark:bg-newPurple bg-white300">
         <section className="w-screen sm:w-[385px] mx-2 sm:mx-0 h-[520px] py-1 bg-white rounded-xl shadow-lg">
           <NavBar handleCurrentPage={(page) => setCurrentList(page)} />
           <div className="h-[410px] overflow-y-scroll">

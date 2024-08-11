@@ -1,12 +1,27 @@
 # Dua tracker
 
 - An app to keep track of my duas.
+- A place to store custom dua.
+- A dua generator coming soon !!!.
+- A hadith generator to generate random hadith.
+- A Quran verse/surah generator to generate random Quran verses and surahs.
 
-### Dependencies to use
+## main parts of the application
 
-1. vscode-pdf
+- This application consits of four main parts.
 
-# how to pass data from child to parent (hack)
+1. Daily Dua: Dua to do on a daily basis; morning adkar, evening adkar, after prayer adkar, and adkar before you sleep.
+2. Special Dua: This is a place to store dua you might have seen online and want to do them on a regular basis.
+3. Hadith Generator: Generate random hadith, it uses a free api that contains all the hadith to generate random hadith
+4. Quran Generator: Generate quran verses and surahs, it also uses a free api created by the same person to get the data
+
+## Features
+
+1. Labels: I used labels to make it easy for the user
+
+# Learn
+
+## how to pass data from child to parent (hack)
 
 1. Create two components child and parent
 2. Add props to the () of the child component

@@ -24,6 +24,7 @@ export default {
       sgRegular: ["SpaceGroteskRegular", "mono"],
       sgLight: ["SpaceGroteskLight", "mono"],
     },
+    darkMode: ["selector", '[data-mode="dark"]'],
   },
   plugins: [],
 };
